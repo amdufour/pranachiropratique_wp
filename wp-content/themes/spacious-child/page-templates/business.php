@@ -46,6 +46,8 @@ get_header(); ?>
     </div>
   </div>
 
+  <!-- Add posts here -->
+
   <div class="homepage-section homepage-team">
     <div class="container">
       <h2 class="section-title">Notre équipe</h2>
