@@ -1,0 +1,10 @@
+/*
+Theme Name: Spacious Child Theme
+Description: A child theme built for Prana Chiropratique
+Author: Anne-Marie Dufour
+Template: spacious
+Version: 0.1.0
+*/
+
+/*@import url("../spacious/style.css");*/
+@import url("css-prana/styles.css");

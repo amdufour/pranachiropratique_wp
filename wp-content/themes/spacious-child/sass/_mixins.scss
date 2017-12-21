@@ -1,0 +1,50 @@
+@mixin clearlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+.clearfix {
+  @include clearfix;
+}
+
+@mixin effect {
+  @include transition(all);
+  @include transition-timing-function(ease-in);
+  @include transition-duration(200ms);
+}
+@mixin effect-slow {
+  @include transition(all);
+  @include transition-timing-function(ease-in-out);
+  @include transition-duration(600ms);
+}
+@mixin effect-very-slow {
+  @include transition(all);
+  @include transition-timing-function(ease-in-out);
+  @include transition-duration(800ms);
+}
+
+/*horizontally center an absolute positioned element*/
+@mixin center-hz {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@mixin center-vt {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}

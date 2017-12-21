@@ -1,0 +1,68 @@
+footer {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 0 200px;
+  font-size: 17px;
+  line-height: 21px;
+  color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6f8a26+0,a8ce4b+100 */
+  background: rgb(111,138,38); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(111,138,38,1) 0%, rgba(168,206,75,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(111,138,38,1) 0%,rgba(168,206,75,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(111,138,38,1) 0%,rgba(168,206,75,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f8a26', endColorstr='#a8ce4b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  .footer-brand {
+    margin-bottom: 50px;
+    width: 240px;
+    height: 70px;
+    text-indent: -9000em;
+    background-image: url(../assets/images/brand-footer.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 240px auto;
+  }
+  .footer-contact {
+    ul {
+      margin: 0;
+      padding-left: 100px;
+      list-style: none;
+      li {
+        padding: 3px 0 15px 25px;
+        background-repeat: no-repeat;
+        .label {
+          display: inline-block;
+          width: 0;
+          text-indent: -9000em;
+        }
+        &.contact-telephone {
+          background-image: url(../assets/icons/icon-phone.svg);
+          background-size: 16px auto;
+          background-position: 0 5px;
+        }
+        &.contact-email {
+          background-image: url(../assets/icons/icon-mail.svg);
+          background-size: 15px auto;
+          background-position: 0 8px;
+        }
+        &.contact-adresse {
+          background-image: url(../assets/icons/icon-location.svg);
+          background-size: 12px auto;
+          background-position: 2px 3px;
+        }
+      }
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 58%;
+    width: 30%;
+    height: 100%;
+    background-image: url(../assets/images/logo-footer.svg);
+    background-repeat: no-repeat;
+    background-position: right -40px;
+    background-size: 100% auto;
+  }
+}
